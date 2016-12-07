@@ -90,4 +90,4 @@ for num in frequencies:
     notes.append(val)
 
 for n in notes:
-    print notes,
+    print n,
