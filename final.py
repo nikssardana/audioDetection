@@ -56,17 +56,15 @@ for signal in listOfLists:
     l = len(signal)
 
     #imax = index of first peak in w
-    #problem: w is multi dimensional
     imax = np.argsort(np.abs(w),axis=0)[-1]
-    #print "IMAX:",imax
     fs = freqs[imax]
 
-    #freq = imax*fs/l
     freq = abs(fs * 44100)
     frequencies.append(freq)
 
 #print frequencies
 
+#key-value pairs of frequencies and their corresponding names
 frequenciesDict = { 27.500 : 'A0', 29.135 : 'A#0', 30.868 : 'B0', 32.703 : 'C1', 34.648 : 'C#1', 36.708 : 'D1', 38.891 : 'D#1', 41.203 : 'E1',43.654 : 'F1', 46.249 : 'F#1',48.999 : 'G1', 51.913 : 'G#1',55.000 : 'A1',58.270 : 'A#1',61.735 : 'B1',
         65.406: 'C2',  69.296: 'C#2',73.416 : 'D2',77.782:'D#2', 82.407: 'E2',87.307:'F2',92.499:'F#2',97.999 :'G2',103.826:'G#2',110.000:'A2',116.541:'A#2', 123.471: 'B2',
         130.813 : 'C3',  138.591 : 'C#3', 146.832 : 'D3', 155.564 : 'D#3', 164.814 : 'E3', 174.614 : 'F3', 184.997 :'F#3', 195.998 :'G3', 207.652 :'G#3', 220.000 : 'A3', 233.082 : 'A#3', 246.942 : 'B3',
@@ -77,7 +75,8 @@ frequenciesDict = { 27.500 : 'A0', 29.135 : 'A#0', 30.868 : 'B0', 32.703 : 'C1',
         4186.009 : 'C8',  4434.922 : 'C#8', 4698.637 : 'D8', 4978.032 : 'D#8', 5274.042 : 'E8', 5587.652 : 'F8', 5919.912 :'F#8', 6271.928 :'G8', 6644.876 :'G#8', 7040.000 : 'A8', 7458.620 : 'A#8', 7902.133 : 'B8',
         8372.019 : 'C9',  8869.845 : 'C#9', 9397.273 : 'D9', 9956.064 : 'D#9', 10548.083 : 'E9', 11175.305 : 'F9', 11839.823 :'F#9', 12543.855 :'G9', 13289.752 :'G#9',
 
-        } #key-value pairs of frequencies and their corresponding names
+        }
+
 
 notes = []
 for num in frequencies:
