@@ -89,4 +89,5 @@ for num in frequencies:
     val = frequenciesDict[num] if num in data else frequenciesDict[min(frequenciesDict.keys(), key=lambda k: abs(k-num))]
     notes.append(val)
 
-print notes
+for n in notes:
+    print notes,
