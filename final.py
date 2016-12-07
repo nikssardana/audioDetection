@@ -27,7 +27,7 @@ sound = np.divide(sound, float(2**15))
 
 #detect silence and notes
 i=0
-windowSize = 2204
+windowSize = 2205
 windowPosition = 0
 listOfLists = []
 listOfLists.append([])
