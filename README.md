@@ -19,7 +19,7 @@ The script takes a .wav file as input and calculates the frequencies.
 
 =>The values in wav file are read using wave module into a sound array.
 
-=>It then detects the silence in the file by using a working window of size, say 2205. The window is slided over the array.
+=>It then detects the silence in the file by using a working window of fixed size, say 2205. The window is slided over the array.
 
 =>If average sum of squares of values in the window is less than a threshold value, say 0.0001, it is considered as silence.
 
