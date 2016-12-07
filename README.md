@@ -9,7 +9,11 @@ Ex: python final.py sampleAudio/Audio_1.wav
 # Requirements:
 1. Numpy (http://www.numpy.org/)
 2. Wave (https://docs.python.org/2/library/wave.html)
-3. Struct (https://docs.python.org/2/library/struct.html)
+
+# Other modules
+
+1. Sys (https://docs.python.org/2/library/sys.html)
+2. Struct (https://docs.python.org/2/library/struct.html)
 
 # Description
 
