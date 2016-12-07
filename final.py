@@ -4,6 +4,10 @@ import struct
 import numpy as np
 
 def isSilence(windowPosition):
+    '''
+    Returns True if the current window is silence
+    The values are considered as silence if the average of square values in the window are below a threshold, say 0.0001
+    '''
     sumVal = sum( [ x*x for x in sound[windowPosition:windowPosition+windowSize+1] ] )
     avg = sumVal/(windowSize)
     if avg <= 0.0001:
