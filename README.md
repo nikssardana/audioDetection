@@ -29,8 +29,8 @@ The script takes a .wav file as input and calculates the frequencies.
 
 =>Various notes is thus obtained in the variable listOfLists.
 
-=>The discrete cosine transform (DCT) is then calculated using Fast Fourier Transform function numpy.fft.fft().
+=>The discrete fourier transform (DFT) is then calculated using Fast Fourier Transform function numpy.fft.fft().
 
-=>This DCT value is then used to calculate the frequency of note.
+=>This DFT value is then used to calculate the frequency of note.
 
 =>The frequency is then mapped to the nearest known note and the values are then displayed.
