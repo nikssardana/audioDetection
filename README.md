@@ -27,7 +27,7 @@ The script takes a .wav file as input and calculates the frequencies.
 
 =>If average sum of squares of values in the window is less than a threshold value, say 0.0001, it is considered as silence.
 
-=>Various notes is thus obtained in the variable listOfLists.
+=>Various notes are thus obtained in the variable listOfLists.
 
 =>The discrete fourier transform (DFT) is then calculated using Fast Fourier Transform function numpy.fft.fft().
 
